@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>IO</title>
+        <script>
+        function GetInput(idElemen)
+        {
+            //input
+            input = document.getElementById(idElemen).value;
+            //output
+            document.getElementById("lblOutput").innerHTML = input;
+        }
+        /*function GetInput2()
+        {
+            //input
+            input = document.getElementById("txtInput2").value;
+            //output
+            document.getElementById("lblOutput").innerHTML = input;
+        }*/
+
+        </script>
+    </head>
+    <body>
+      <label>Operasi Input Output</label>
+      <br>
+      <label>Input 1</label>
+      <input type="text" id="txtInput1">
+      <br>
+      <label>Input 2</label>
+      <input type="text" id="txtInput2">
+      <br>
+      <label id="lblOutput">Output</label>
+      <br>
+      <button onclick="GetInput('txtInput1')">I1/O</button>
+      <button onclick="GetInput('txtInput2')">I2/O</button>
+    </body>
+</html>
